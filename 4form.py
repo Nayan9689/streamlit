@@ -1,0 +1,31 @@
+import streamlit as st
+st.set_page_config(page_title="📃Prediction System Input")
+
+with st.form("Diabetes Prediction System Details"):
+   st.write("Inside the form")
+   st.title('Welcome to Diabetes Prediction System')
+   st.text_input("Enter Your Name")
+   st.text("Gender 0: Male, 1: Female")
+   st.number_input("Enter your Gender")
+   st.slider("Select Your Age", 0,150)
+   st.number_input("Enter your BMI" ,1,150)
+   st.number_input("Enter your FBG")
+   st.number_input("Enter your 2 Hour Postpranadial Glucose")
+   st.number_input("Enter your Hba1c")
+   st.text("Family History 1:Yes, 0:No")
+   st.number_input("Enter your Family History", 0,1)
+   st.number_input("Enter your Urine_Microalbumin", 1,300)
+   st.text("Urine Glucose 0:Normal, 1:Abnormal")
+   st.number_input("Enter your Urine_Glucose", 0,1)
+   st.text("Urine Ketonese 0:Normal, 1:Abnormal")
+   st.number_input("Enter your Urine_Ketones", 0,1)
+   st.text("Lipid Profile 0:Normal, 1:Abnormal")
+   st.number_input("Enter your Lipid Profile", 0,1)
+   st.text("Physical Activity 1:Yes 0:No 2:Someday")
+   st.number_input("Enter your Physical Activity", 0,2)
+   st.number_input("Enter your Systolic BP", 0,200)
+   st.number_input("Enter your Diastolic BP", 0,100)
+
+st.button("Predict")
+
+st.write("Outside the form")
